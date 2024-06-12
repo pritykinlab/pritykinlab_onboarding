@@ -4,6 +4,7 @@ Ask Yuri for:
 1. keycard access to comp space
 2. Slack access
 3. Argo access
+4. Github access
 
 # Set Up Argo
 ## Set up Miniconda
