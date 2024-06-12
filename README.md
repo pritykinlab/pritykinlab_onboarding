@@ -80,3 +80,13 @@ Example headers:
 #SBATCH --mail-user={}@princeton.edu
 #SBATCH -o main.out
 ```
+
+# FAQ
+You can't connect to a jupyter server because address is already in use:
+```
+bind [127.0.0.1]:8890: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 8890
+Could not request local forwarding.
+```
+Answer: 
+Rerun `ssh -N -f -L 8890:argo-11:8890 {id}@argo.princeton.edu` after failing to open the url.
