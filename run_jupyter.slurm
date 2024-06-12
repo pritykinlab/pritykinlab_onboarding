@@ -9,8 +9,6 @@
 #SBATCH --mail-user=dillonlue@princeton.edu
 #SBATCH --out=run_jupyter.out
 
-#cd /Genomics/ogtr04/dl4257
-cd /Genomics/pritykinlab/dillon
 
 # get tunneling info
 XDG_RUNTIME_DIR=""
