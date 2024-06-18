@@ -6,7 +6,18 @@ Ask Yuri for:
 3. Argo access
 4. Github access
 
+
 # Set Up Argo
+1. Download iterm (some nice features but not necessary)
+
+## Using Argo
+Login. Open iterm. Run `ssh {computing_id}@argo.princeton.edu`
+1. If you see something about adding a key, just say yes (this just happens on the first try
+2. Password instructions through email
+
+## Using the Terminal
+1. Know some unix commands. I would not memorize commands, just do what you can to get the job done. Know stuff about directory navigation everything else is extra: https://www.geeksforgeeks.org/linux-tutorial/
+
 ## Set up Miniconda
 Miniconda is the primary way to download packages into a self-contained environments.
 
