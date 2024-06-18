@@ -18,6 +18,16 @@ Login. Open iterm. Run `ssh {computing_id}@argo.princeton.edu`
 ## Using the Terminal
 1. Know some unix commands. I would not memorize commands, just do what you can to get the job done. Know stuff about directory navigation everything else is extra: https://www.geeksforgeeks.org/linux-tutorial/
 
+## VSCode
+If you don't know how to create a file in terminal, install VSCode.
+1. Opne VSCode
+2. Go to the extension icon on the left then search for `Remote - SSH`
+3. Download `Remote - SSH`
+4. Go to the bottom icon with a computer and some circle on the bottom right
+5. Add ssh host (there is plus button next to window)
+6. New popup and type in you username and password as done for terminal
+7. choose the top option for adding a configuration
+
 ## Set up Miniconda on Argo
 Miniconda is the primary way to download packages into a self-contained environments.
 
@@ -59,7 +69,6 @@ sbatch run_jupyter.slurm
 
 After the sbatch you will get a file `run_jupyter.out`. Open the file to get a command like this:
 ```
-
 Command to create ssh tunnel:
 ssh -N -f -L 8890:argo-33:8890 dl4257@argo.princeton.edu
 
@@ -75,6 +84,7 @@ ssh -N -f -L 8890:argo-33:8890 dl4257@argo.princeton.edu
 In your browser then got to `https://localhost:8890`
 
 ## Notes about Slurm Jobs
+
 See your slurm jobs:
 ```
 squeue -u dl4257
@@ -101,3 +111,4 @@ Could not request local forwarding.
 ```
 Answer: 
 Rerun `ssh -N -f -L 8890:argo-11:8890 {id}@argo.princeton.edu` after failing to open the url.
+
