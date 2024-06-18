@@ -50,6 +50,7 @@ conda activate jupyter
 conda install anaconda::jupyter
 ```
 
+More generally, if you want to create a new environemnt (and this is the first thing I do on a new project/type of script):
 ```
 conda create -n {name_env}
 conda activate {name_env}
