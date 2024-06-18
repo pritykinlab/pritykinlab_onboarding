@@ -18,7 +18,7 @@ Login. Open iterm. Run `ssh {computing_id}@argo.princeton.edu`
 ## Using the Terminal
 1. Know some unix commands. I would not memorize commands, just do what you can to get the job done. Know stuff about directory navigation everything else is extra: https://www.geeksforgeeks.org/linux-tutorial/
 
-## Set up Miniconda
+## Set up Miniconda on Argo
 Miniconda is the primary way to download packages into a self-contained environments.
 
 https://docs.anaconda.com/free/miniconda/#quick-command-line-install
