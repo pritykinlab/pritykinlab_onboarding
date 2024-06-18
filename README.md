@@ -29,6 +29,8 @@ If you don't know how to create a file in terminal, install VSCode.
 7. choose the top option for adding a configuration
 
 ## Set up Miniconda on Argo
+Read a little about why you would want to create environments: `https://conda.io/projects/conda/en/latest/user-guide/getting-started.html`
+
 Miniconda is the primary way to download packages into a self-contained environments.
 
 https://docs.anaconda.com/free/miniconda/#quick-command-line-install
@@ -44,6 +46,7 @@ rm -rf ~/miniconda3/miniconda.sh
 Reset terminal:
 ```
 conda create -y -n jupyter
+conda activate jupyter
 conda install anaconda::jupyter
 ```
 
