@@ -57,6 +57,7 @@ Reset terminal:
 conda create -y -n jupyter
 conda activate jupyter
 conda install anaconda::jupyter
+conda install conda-forge::nb_conda_kernels
 ```
 
 More generally, if you want to create a new environemnt (and this is the first thing I do on a new project/type of script):
@@ -123,5 +124,4 @@ channel_setup_fwd_listener_tcpip: cannot listen to port: 8890
 Could not request local forwarding.
 ```
 Answer: 
-Rerun `ssh -N -f -L 8890:argo-11:8890 {id}@argo.princeton.edu` after failing to open the url.
-
+Rerun `ssh -N -f -L 8890:argo-11:8890 {id}@argo.princeton.edu` after failing to open the url. Or run lsof -ti:8890 | xargs kill
