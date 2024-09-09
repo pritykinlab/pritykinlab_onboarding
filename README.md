@@ -19,6 +19,7 @@ Login. Open iterm. Run `ssh {computing_id}@argo.princeton.edu`
 1. Know some unix commands. I would not memorize commands, just do what you can to get the job done. Know stuff about directory navigation everything else is extra: https://www.geeksforgeeks.org/linux-tutorial/
 
 ## VSCode
+### Downloading VSCode
 If you don't know how to create a file in terminal, install VSCode.
 1. Opne VSCode
 2. Go to the extension icon on the left then search for `Remote - SSH`
@@ -27,6 +28,14 @@ If you don't know how to create a file in terminal, install VSCode.
 5. Add ssh host (there is plus button next to window)
 6. New popup and type in you username and password as done for terminal
 7. choose the top option for adding a configuration
+
+### Using VSCode
+1. create a new conda environment with `ipykernel`. Example: `conda install numpy; conda install ipykernel`
+2. `ipykernel` is required in order for jupyter notebook to see your enivornment
+3. Open a jupyter notebook
+4. In upper right select environment that was created in step 1.
+5. Start coding!
+
 
 ## Set up Miniconda on Argo
 Read a little about why you would want to create environments: `https://conda.io/projects/conda/en/latest/user-guide/getting-started.html`
