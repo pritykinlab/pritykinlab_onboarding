@@ -75,7 +75,7 @@ conda install conda-forge::mamba
 Mamba is a faster version of conda. You would then just use commands like `mamba install x`
 
 ## Running Jupyter Notebooks
-Most work can be done by starting a jupyter notebook on a slurm node using `run_jupyter.slurm` (This is in the github). Make sure to run have a conda environment with jupyter running.
+Most work can be done by starting a jupyter notebook on a slurm node using [File Name](run_jupyter.slurm). Make sure to run have a conda environment with jupyter running.
 ```
 conda activate jupyter
 sbatch run_jupyter.slurm
@@ -84,7 +84,7 @@ sbatch run_jupyter.slurm
 After the sbatch you will get a file `run_jupyter.out`. Open the file to get a command like this:
 ```
 Command to create ssh tunnel:
-ssh -N -f -L 8890:argo-33:8890 dl4257@argo.princeton.edu
+ssh -N -f -L 8890:argo-33:8890 {net_id}@argo.princeton.edu
 
 Use a Browser on your local machine to go to:
 localhost:8890  (prefix w/ https:// if using password)
@@ -92,7 +92,7 @@ localhost:8890  (prefix w/ https:// if using password)
 
 On your terminal without connecting to argo access:
 ```
-ssh -N -f -L 8890:argo-33:8890 dl4257@argo.princeton.edu
+ssh -N -f -L 8890:argo-33:8890 {net_id}@argo.princeton.edu
 ```
 
 In your browser then got to `https://localhost:8890`
@@ -101,7 +101,7 @@ In your browser then got to `https://localhost:8890`
 
 See your slurm jobs:
 ```
-squeue -u dl4257
+squeue -u {net_id}
 ```
 
 Example headers:
@@ -112,7 +112,7 @@ Example headers:
 #SBATCH --cpus-per-task=2        # cpu-cores per task (>1 if multi-threaded tasks)
 #SBATCH --mem-per-cpu=8GB         # memory per cpu-core (4G is default)
 #SBATCH --time=24:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --mail-user={}@princeton.edu
+#SBATCH --mail-user=your_email@princeton.edu
 #SBATCH -o main.out
 ```
 
