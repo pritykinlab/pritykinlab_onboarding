@@ -75,7 +75,7 @@ conda install conda-forge::mamba
 Mamba is a faster version of conda. You would then just use commands like `mamba install x`
 
 ## Running Jupyter Notebooks
-Most work can be done by starting a jupyter notebook on a slurm node using `run_jupyter.slurm`. Make sure to run have a conda environment with jupyter running.
+Most work can be done by starting a jupyter notebook on a slurm node using `run_jupyter.slurm` (This is in the github). Make sure to run have a conda environment with jupyter running.
 ```
 conda activate jupyter
 sbatch run_jupyter.slurm
