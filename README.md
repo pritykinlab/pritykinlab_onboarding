@@ -97,11 +97,26 @@ ssh -N -f -L 8890:argo-33:8890 {net_id}@argo.princeton.edu
 
 In your browser then got to `https://localhost:8890`
 
+You may be prompted to enter a token for authentication.
+
+Retrieve the token from the run_jupyter.out file. Look for the token after the URL: http://argo-{num}:8890/lab?token=.
+Copy and paste the token into the prompt to gain access to Jupyter Notebook.
+
+
 ## Notes about Slurm Jobs
 
 See your slurm jobs:
 ```
 squeue -u {net_id}
+```
+See slurm jobs history:
+```
+sacct -u <net_id>
+```
+
+Cancel a specific slurm job:
+```
+scancel <job_id>
 ```
 
 Example headers:
