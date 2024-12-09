@@ -6,7 +6,7 @@
 #SBATCH --time=240:00:00          # total run time limit (HH:MM:SS)
 #SBATCH --mail-type=begin        # send email when job begins
 #SBATCH --mail-type=end          # send email when job ends
-#SBATCH --mail-user={your_meail}@princeton.edu
+#SBATCH --mail-user={net_id}@princeton.edu
 #SBATCH --out=run_jupyter.out
 
 
@@ -28,3 +28,4 @@ localhost:${port}  (prefix w/ https:// if using password)
 
 # Run Jupyter
 jupyter-notebook --no-browser --port=${port} --ip=${node}
+#jupyter-lab --no-browser --port=${port} --ip=${node}  #if you prefer jupyter lab
