@@ -5,6 +5,10 @@ Ask Yuri for:
 2. Argo access
 3. Github access
 
+# Lab Resources
+1. Argo - Princeton's genomics specific computing cluster (most members in Yuri's lab use Argo); this tutorial talks about using Argo
+3. Della - University wide computing cluster
+
 # Set Up Argo
 1. Download iterm (some nice features but not necessary)
 
@@ -12,6 +16,10 @@ Ask Yuri for:
 Login. Open iterm. Run `ssh {computing_id}@argo.princeton.edu`
 1. If you see something about adding a key, just say yes (this just happens on the first try
 2. Password instructions through email
+
+## Yuri Directory on Argo
+1. Create a new folder with your name in `/Genomics/pritykinlab`
+2. This directory has mounted to it all the storage for the lab, so it is recommended to use this directory directly
 
 ## Using the Terminal
 1. Know some unix commands. I would not memorize commands, just do what you can to get the job done. Know stuff about directory navigation everything else is extra: https://www.geeksforgeeks.org/linux-tutorial/
